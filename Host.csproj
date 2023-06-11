@@ -7,6 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ClientWPFPostA\**" />
+    <Compile Remove="ClientWPFPostB\**" />
+    <Content Remove="ClientWPFPostA\**" />
+    <Content Remove="ClientWPFPostB\**" />
+    <EmbeddedResource Remove="ClientWPFPostA\**" />
+    <EmbeddedResource Remove="ClientWPFPostB\**" />
+    <None Remove="ClientWPFPostA\**" />
+    <None Remove="ClientWPFPostB\**" />
+    <TypeScriptCompile Remove="ClientWPFPostA\**" />
+    <TypeScriptCompile Remove="ClientWPFPostB\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="5.1.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

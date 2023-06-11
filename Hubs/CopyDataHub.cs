@@ -8,10 +8,5 @@ namespace Host.Hubs
         {
             await Clients.All.SendAsync("DataCopied", message);
         }
-
-        public async Task PasteData(string message)
-        {
-            await Clients.All.SendAsync("Data Copied", message);
-        }
     }
 }
